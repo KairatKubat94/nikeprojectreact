@@ -1,0 +1,363 @@
+.page {
+  min-height: 100vh;
+  background-color: #fff;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: #999;
+}
+
+.breadcrumb a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.breadcrumb a:hover {
+  color: #000;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-bottom: 5rem;
+}
+
+.image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #000;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.category {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #999;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 1.5rem 0;
+  color: #000;
+}
+
+.price {
+  margin-bottom: 2rem;
+}
+
+.priceValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.sizes {
+  margin-bottom: 2rem;
+}
+
+.sizeLabel {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.sizeOptions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.sizeBtn {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e5e5e5;
+  background-color: #fff;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 50px;
+  text-align: center;
+}
+
+.sizeBtn:hover {
+  border-color: #000;
+}
+
+.sizeBtn:active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.addBtn {
+  padding: 1.25rem 2rem;
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+}
+
+.addBtn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.details {
+  padding-top: 2rem;
+  border-top: 1px solid #e5e5e5;
+}
+
+.details h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+}
+
+.details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.details li {
+  padding: 0.5rem 0;
+  color: #666;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.details li:last-child {
+  border-bottom: none;
+}
+
+.related {
+  background-color: #f8f8f8;
+  padding: 4rem 2rem;
+}
+
+.related h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin: 0 0 2rem 0;
+  text-align: center;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.relatedCard {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.3s ease;
+}
+
+.relatedCard:hover {
+  transform: translateY(-4px);
+}
+
+.relatedCard img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  background-color: #fff;
+}
+
+.relatedCard h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+}
+
+.relatedCard span {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.notFound {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.notFound h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.notFound p {
+  color: #999;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 1024px) {
+  .product {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 1.5rem;
+  }
+
+  .name {
+    font-size: 1.8rem;
+  }
+
+  .priceValue {
+    font-size: 1.5rem;
+  }
+
+  .addBtn {
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .details h3 {
+    font-size: 0.9rem;
+  }
+
+  .details li {
+    font-size: 0.9rem;
+  }
+
+  .related h2 {
+    font-size: 1.5rem;
+  }
+
+  .relatedGrid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .relatedCard img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .breadcrumb {
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .product {
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .name {
+    font-size: 1.3rem;
+  }
+
+  .priceValue {
+    font-size: 1.2rem;
+  }
+
+  .sizeOptions {
+    gap: 0.5rem;
+  }
+
+  .sizeBtn {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.8rem;
+    min-width: 40px;
+  }
+
+  .addBtn {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .related {
+    padding: 2rem 1rem;
+  }
+
+  .related h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .relatedCard img {
+    height: 150px;
+  }
+}
