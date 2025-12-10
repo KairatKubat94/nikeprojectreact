@@ -5,7 +5,7 @@ export default function About() {
     <div className={styles.about}>
       <div className={styles.header}>
         <div className={styles.container}>
-          <h1 className={styles.title}>О STRIDE</h1>
+          <h1 className={styles.title}>About Kairat</h1>
           <p className={styles.subtitle}>Бренд, вдохновляющий активный образ жизни</p>
         </div>
       </div>
