@@ -12,7 +12,7 @@ export default function About() {
 
       <div className={styles.container}>
         <section className={styles.section}>
-          <h2 className={styles.sectionTitle}>НАША ИСТОРИЯ</h2>
+          <h2 className={styles.sectionTitle}>Мужики история</h2>
           <p>
             Че смеетесь пацаны Движение это жизнь.
           </p>
